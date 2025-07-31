@@ -16,11 +16,16 @@ Design, implement, and configure a functional small office/home office (SOHO) ne
 ![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/1.png)
 
 
-
-
-
-
 ## Phase 2: Initial Device Placement and Cabling
+- 1 2911 router
+- 2 2960 switches
+- 2 PCS
+- 1 server
+- 1 2901 router
+
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/cableConnections.png)
+
+
 ## Phase 3: Router Configuration (Edge Router)
 ## Phase 4: ISP Router Configuration (Simulation)
 ## Phase 5: Server Configuration (DHCP/DNS on LAN Segment 2)
