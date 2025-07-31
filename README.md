@@ -94,6 +94,35 @@ Design, implement, and configure a functional small office/home office (SOHO) ne
 
 
 ## Phase 4: ISP Router Configuration (Simulation)
+
+- Access CLI: Click on the Generic Router (simulating ISP) and go to the "CLI" tab.
+- Enable Mode: **Type** enable
+- Global Configuration Mode: Type configure terminal
+- Configure Hostname: hostname ISP_Router
+
+**Configure Interface for WAN Link:**
+- interface GigabitEthernet0/0
+- ip address 10.0.0.2 255.255.255.252
+- no shutdown
+- description Link to Edge_Router
+- exit
+
+**Configure Static Route back to your network:**
+- ip route 192.168.1.0 255.255.255.0 10.0.0.1
+- ip route 192.168.2.0 255.255.255.0 10.0.0.1
+
+**Save Configuration:**
+copy running-config startup-config
+
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/ISPConfig1.png)
+
+
+
+
+
+
+
+
 ## Phase 5: Server Configuration (DHCP/DNS on LAN Segment 2)
 ## Phase 6: Client PC Configuration and Verification
 ## Phase 7: Connectivity Testing and Verification
