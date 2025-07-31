@@ -37,6 +37,62 @@ Design, implement, and configure a functional small office/home office (SOHO) ne
 
 
 ## Phase 3: Router Configuration (Edge Router)
+
+- Access CLI: Click on the Cisco 2911 Router and go to the "CLI" tab.
+- Enable Mode: ***Type*** enable
+- Global Configuration Mode: ***Type*** configure terminal
+- Configure Hostname: hostname Edge_Router
+- 
+
+  **Configure Interface for LAN Segment 1:**
+- interface GigabitEthernet0/0
+- ip address 192.168.1.1 255.255.255.0
+- no shutdown
+- description Link to Office_LAN
+- exit
+
+
+**Configure Interface for LAN Segment 2:**
+- interface GigabitEthernet0/1
+- ip address 192.168.2.1 255.255.255.0
+- no shutdown
+- description Link to Server_LAN
+- exit
+
+
+**Configure Interface for WAN Link:**
+- interface GigabitEthernet0/2
+- ip address 10.0.0.1 255.255.255.252
+- no shutdown
+- description Link to ISP
+- exit
+
+  
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/routerConfig1.png)
+
+
+**Configure DHCP Server for LAN Segment 1:**
+- ip dhcp pool OFFICE_POOL
+- network 192.168.1.0 255.255.255.0
+- default-router 192.168.1.1
+- dns-server 192.168.2.10 (We will configure the server with this IP later)
+- exit
+- ip dhcp excluded-address 192.168.1.1 192.168.1.99
+
+
+**Configure Default Route (to ISP):**
+- ip route 0.0.0.0 0.0.0.0 10.0.0.2
+
+
+**Save Configuration:**
+- copy running-config startup-config
+
+
+
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/routerConfig2.png)
+
+
+
 ## Phase 4: ISP Router Configuration (Simulation)
 ## Phase 5: Server Configuration (DHCP/DNS on LAN Segment 2)
 ## Phase 6: Client PC Configuration and Verification
