@@ -155,10 +155,13 @@ copy running-config startup-config
 **Configure PC1 (Office Network):**
 - Click on PC1 -> "Desktop" tab -> "IP Configuration".
 - Select "Satic". Give an IP address from the 192.168.1.0/24 range (e.g., 192.168.1.100), with 192.168.1.1 as the gateway and 192.168.2.10 as the DNS server.
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/PCConfig1.png)
+
 
 **Configure PC2 (Server Network):**
 - Click on PC2 -> "Desktop" tab -> "IP Configuration".
 - Select "Static". Give an IP address from the 192.168.2.0/24 range (e.g., 192.168.2.100), with 192.168.2.1 as the gateway and 192.168.2.10 as the DNS server.
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/PCConfig2.png)
 
 
 
