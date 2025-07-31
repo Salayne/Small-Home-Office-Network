@@ -12,6 +12,9 @@ Design, implement, and configure a functional small office/home office (SOHO) ne
 - Router Interface: 10.0.0.1
 - ISP Router Interface: 10.0.0.2
 
+  
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/1.png)
+
 
 
 
