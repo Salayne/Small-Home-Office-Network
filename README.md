@@ -1,5 +1,23 @@
 # Small-Home-Office-Network
 Design, implement, and configure a functional small office/home office (SOHO) network using Cisco Packet Tracer
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/netTopDia.png)
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/Salayne/Small-Home-Office-Network/blob/main/officeLook.png" alt="Network Topology Diagram" width="450">
+      <br>
+    </td>
+    <td>
+      <img src="https://github.com/Salayne/Small-Home-Office-Network/blob/main/rackProject1.png" alt="Rack Project Setup" width="450">
+      <br>
+      <em>Fig 2: Physical Rack Layout</em>
+    </td>
+  </tr>
+</table>
+
+
+
 
 ## Phase 1: Network Design and IP Addressing Scheme
 ### LAN Segment 1 Office Network 192.168.1.0/24
