@@ -190,9 +190,10 @@ copy running-config startup-config
 **Router Show Commands (from Edge_Router CLI):**
 - show ip interface brief (Verify interface status and IP addresses)
 - show ip route (Verify routing table entries)
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/showCMD1.png)
+
 - show running-config (Review current configuration)
 - show ip dhcp binding (See DHCP leases)
 - show ip dhcp pool (See DHCP pool details)
-![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/showCMD1.png)
 ![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/showCMD2.png)
-![image alt]()
+
