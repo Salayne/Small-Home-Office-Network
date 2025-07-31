@@ -117,12 +117,41 @@ copy running-config startup-config
 ![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/ISPConfig1.png)
 
 
-
-
-
-
-
-
 ## Phase 5: Server Configuration (DHCP/DNS on LAN Segment 2)
+
+***Assign Static IP to Server:***
+- Click on the Server -> "Desktop" tab -> "IP Configuration".
+- Set IP Address: 192.168.2.10
+- Subnet Mask: 255.255.255.0
+- Default Gateway: 192.168.2.1
+- DNS Server: 192.168.2.10 
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/serverConfig1.png)
+
+
+***Configure DHCP Service on Server:***
+- Click on the Server -> "Services" tab -> "DHCP".
+- Ensure "On" is selected for the service.
+- Pool Name: SERVER_POOL
+- Default Gateway: 192.168.2.1
+- DNS Server: 192.168.2.10
+- Start IP Address: 192.168.2.100
+- Maximum Number of Users: 100 (or as desired)
+- Click "Save".
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/serverConfig2.png)
+
+***Configure DNS Service on Server (Optional, but good practice):***
+- Click on the Server -> "Services" tab -> "DNS".
+- Ensure "On" is selected for the service.
+- Add an "A Record" for example.com (or any hostname) pointing to an internal IP, e.g., - - 192.168.2.10 for the server itself. This demonstrates DNS resolution.
+- Name: myserver.local
+- Type: A Record
+- Address: 192.168.2.10
+- Click "Add".
+
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/serverConfig3.png)
+
+
+
+
 ## Phase 6: Client PC Configuration and Verification
 ## Phase 7: Connectivity Testing and Verification
