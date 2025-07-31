@@ -25,15 +25,15 @@ Design, implement, and configure a functional small office/home office (SOHO) ne
 
 ![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/cableConnections.png)
 
-Cable Connections:
-Router to Switches: Use Copper Straight-Through cables.
-Router GigabitEthernet0/0/0 to Switch 1 FastEthernet0/1
-Router GigabitEthernet0/0/1 to Switch 2 FastEthernet0/1
-Switches to PCs/Server: Use Copper Straight-Through cables.
-Switch 1 FastEthernet0/2 to PC1 FastEthernet0
-Switch 2 FastEthernet0/2 to PC2 FastEthernet0
-Switch 2 FastEthernet0/3 to Server FastEthernet0
-Router GigabitEthernet0/0/2 to ISP Router GigabitEthernet0/0
+**Cable Connections:**
+- Router to Switches: Use Copper Straight-Through cables.
+- Router GigabitEthernet0/0/0 to Switch 1 FastEthernet0/1
+- Router GigabitEthernet0/0/1 to Switch 2 FastEthernet0/1
+- Switches to PCs/Server: Use Copper Straight-Through cables.
+- Switch 1 FastEthernet0/2 to PC1 FastEthernet0
+- Switch 2 FastEthernet0/2 to PC2 FastEthernet0
+- Switch 2 FastEthernet0/3 to Server FastEthernet0
+- Router GigabitEthernet0/0/2 to ISP Router GigabitEthernet0/0
 
 
 ## Phase 3: Router Configuration (Edge Router)
