@@ -167,3 +167,32 @@ copy running-config startup-config
 
 
 ## Phase 7: Connectivity Testing and Verification
+
+**Ping Tests (from PCs):**
+***From PC1 "Command Prompt":***
+- ping 192.168.1.1 (Gateway)
+- ping 192.168.2.1 (Other LAN Gateway)
+- ping 192.168.2.10 (Server)
+- ping 10.0.0.2 (ISP Router)
+- ping myserver.local (DNS Resolution)
+
+  ![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/PC1ping1.png)
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/PC1ping2.png)
+
+  
+  
+**Traceroute (from PCs):**
+- From PC1 "Command Prompt": tracert 10.0.0.2 (Observe the hops through your router)
+  ![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/traceRoute1.png)
+
+
+  
+**Router Show Commands (from Edge_Router CLI):**
+- show ip interface brief (Verify interface status and IP addresses)
+- show ip route (Verify routing table entries)
+- show running-config (Review current configuration)
+- show ip dhcp binding (See DHCP leases)
+- show ip dhcp pool (See DHCP pool details)
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/showCMD1.png)
+![image alt](https://github.com/Salayne/Small-Home-Office-Network/blob/main/showCMD2.png)
+![image alt]()
